@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.projectplant.projectplant.loginController">
+   <children>
+      <Label fx:id="labelTittle" layoutX="269.0" layoutY="99.0" text="ProjectPlant" />
+      <TextField fx:id="txtUsername" layoutX="226.0" layoutY="164.0" promptText="Username" />
+      <TextField fx:id="txtPassword" layoutX="226.0" layoutY="207.0" promptText="Password" />
+      <Button fx:id="btnLogin" layoutX="278.0" layoutY="256.0" mnemonicParsing="false" onAction="#userLogin" text="Login" />
+   </children>
+</AnchorPane>
