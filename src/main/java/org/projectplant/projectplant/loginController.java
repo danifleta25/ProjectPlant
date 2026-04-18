@@ -2,13 +2,18 @@ package org.projectplant.projectplant;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class loginController {
+
+public class loginController implements Initializable {
 
     @FXML
     private Button btnLogin;
@@ -39,6 +44,14 @@ public class loginController {
     }
 
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
 
-
+        // label Style
+        labelTittle.setStyle(
+                "-fx-text-fill: green;" +
+                "-fx-font-weight: bold;"
+        );
+        labelTittle.setAlignment(Pos.CENTER);
+    }
 }
