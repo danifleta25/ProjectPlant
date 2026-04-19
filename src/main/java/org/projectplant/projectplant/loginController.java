@@ -34,7 +34,7 @@ public class loginController implements Initializable {
     @FXML
     private Button btnNewUser;
 
-    private List<User> users = new ArrayList<>();
+    private final List<User> users = new ArrayList<>();
 
 
     @Override
