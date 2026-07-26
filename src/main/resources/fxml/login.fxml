@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.projectplant.projectplant.presentation.controller.LoginController">
    <children>
       <VBox alignment="CENTER" layoutX="119.0" layoutY="47.0" prefHeight="314.0" prefWidth="358.0" spacing="15.0">
@@ -22,7 +21,7 @@
             <TextField fx:id="txtUsername" promptText="Introduce tu usuario" />
             <Label text="Contraseña" />
             <PasswordField fx:id="txtPassword" promptText="Introduce tu contraseña" />
-            <Button mnemonicParsing="false" onAction="#handleLogin" text="Iniciar sesión" />
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#handleLogin" text="Iniciar sesión" />
          </children>
       </VBox>
    </children>
